@@ -1,0 +1,24 @@
+@import '../../assets/css/style-variables.scss';
+
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  & .nav-wrapper {
+    width: $SideBarWidth;
+  }
+
+  & .maincontent-wrapper {
+    flex: 1;
+    height: 100vh;
+    width: calc(100vw - $SideBarWidth);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main-wrapper {
+    & .nav-wrapper {
+      display: none;
+    }
+  }
+}

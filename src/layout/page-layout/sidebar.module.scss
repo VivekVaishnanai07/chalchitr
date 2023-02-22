@@ -1,0 +1,85 @@
+@import '../../assets/css/style-variables.scss';
+
+.sidebar-wrapper {
+  height: (100vh);
+  width: $SideBarWidth;
+  box-shadow: 2px 6px 12px $shadowDark;
+  position: relative;
+  z-index: 110;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+
+  & .sidebar-header {
+    height: $TopBarHeight;
+  }
+
+  & .sidebar-content {
+    margin: 0.5rem;
+    flex: 1;
+  }
+
+  & .sidebar-footer {
+    margin: 0.5rem;
+  }
+
+  & .nav-item {
+    color: $primary;
+    border-radius: 2.5rem;
+    margin: 0.25rem 0;
+
+    &-active,
+    &-active:hover {
+      background-color: $primary;
+      color: white;
+    }
+
+    & .menu-icon,
+    .menu-title {
+      color: inherit;
+      font-weight: 500;
+    }
+  }
+
+  & .nav-collection-list {
+    & .title {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+
+      & p {
+        margin: 0;
+        font-weight: 500;
+      }
+    }
+
+    & .list {
+      margin-top: 0.5rem;
+
+      & .item {
+        display: flex;
+        align-items: center;
+        margin: 0.35rem 0;
+        cursor: pointer;
+
+        & p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  & .feature-request {
+    background: $primary;
+    color: white;
+    padding: 1rem;
+    margin-top: .5rem;
+    border-radius: 6px;
+    text-align: center;
+
+    & p {
+      margin: 0 0 2rem 0;
+    }
+  }
+}

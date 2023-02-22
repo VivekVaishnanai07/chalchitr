@@ -1,0 +1,23 @@
+@media only screen and (max-width: 400px) {
+  .header-icon {
+    display: none !important;
+  }
+}
+
+/* .icon-wrapper {
+  display: none !important;
+} */
+
+@media only screen and (max-width: 400px) {
+  .icon-wrapper {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .topbar-wrapper {
+    height: 76px;
+    width: 100%;
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../assets/css/style-variables.scss';
+
+
+.topbar-wrapper {
+  height: $TopBarHeight;
+  width: calc(100vw - $SideBarWidth);
+  box-shadow: 10px 0px 12px rgba(0, 0, 0, 0.2);
+  z-index: 111;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $MainContentPadding;
+
+  & .left {
+    display: flex;
+    align-items: center;
+
+    & .icon-wrapper {
+      width: 2rem;
+      display: flex;
+      align-items: center;
+      margin-right: 0.6rem;
+
+      >* {
+        cursor: pointer;
+      }
+    }
+  }
+
+  & .right {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .topbar-wrapper {
+    height: 76px;
+    width: 100%;
+    padding: 0 16px;
+  }
+}
