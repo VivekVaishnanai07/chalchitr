@@ -24,7 +24,7 @@ export const PUBLIC_ROUTES = [
     element: <PrivateDashboardLayout />,
     children: [
       {
-        path: 'collections',
+        path: '/',
         element: <AllCollectionMovieList />,
       },
       {
