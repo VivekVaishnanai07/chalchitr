@@ -1,15 +1,15 @@
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
-import { Button, Card, CardActions, CardContent } from '@mui/material';
+import { Button, Card, CardActions, CardContent, Grid } from '@mui/material';
 import { movies } from '../common/utils';
 import './main-container.css';
 
 const AllCollectionMovieList = () => {
 
   return (
-    <div className="container-wrapper">
+    <Grid container spacing={{ xs: 1 }} columns={{ xs: 4, sm: 7, md: 12 }} style={{ padding: 8 }}>
       {
         movies.map((data: any) => (
-          <div className='container' key={data.name}>
+          <Grid item xs={2} sm={2} md={2} key={data.name}>
             <Card className='card-wrapper' sx={{
               boxShadow: '0px 5px 8px rgba(0, 0, 0, 0.2)',
               transition: 'transform ease-in-out .25s', borderRadius: 0,
@@ -23,10 +23,9 @@ const AllCollectionMovieList = () => {
                 <Button size="small" href={data.download} className="button"><FileDownloadOutlinedIcon className='button-icon' /></Button>
               </CardActions>
             </Card>
-          </div>
-        ))
-      }
-    </div>
+          </Grid>
+        ))}
+    </Grid>
   );
 };
 

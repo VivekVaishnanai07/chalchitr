@@ -16,7 +16,6 @@ import Typography from '@mui/material/Typography';
 import * as React from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { ReactComponent as MovieIcon } from '../../assets/svg/film.svg';
-import { ReactComponent as MainIcon } from '../../assets/svg/chalchitra.svg';
 import { ReactComponent as FilmIcon } from '../../assets/svg/film1.svg';
 import { getRandomColor } from '../../pages/common/utils';
 import Style from './sidebar.module.scss';
@@ -92,7 +91,7 @@ export default function TopBar(props: Props) {
 
   const SideBarHeader = (
     <div className={Style['sidebar-header']}>
-      {/* <MainIcon /> */}
+      <img src='chalchitra_main.png' />
     </div>
   );
 
