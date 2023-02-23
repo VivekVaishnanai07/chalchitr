@@ -9,7 +9,7 @@ const list = (movieList: any) => {
   return (
     <Grid container spacing={{ xs: 1 }} columns={{ xs: 4, sm: 7, md: 12 }} style={{ padding: 8 }}>
       {
-        movies.map((data: any) => (
+        movieList.map((data: any) => (
           <Grid item xs={2} sm={2} md={2} key={data.name}>
             <Card className='card-wrapper' sx={{
               boxShadow: '0px 5px 8px rgba(0, 0, 0, 0.2)',
