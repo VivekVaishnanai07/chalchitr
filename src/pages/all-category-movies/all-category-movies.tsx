@@ -3,7 +3,6 @@ import { Button, Card, CardActions, CardContent, Grid } from '@mui/material';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { movies } from '../common/utils';
-import '../all-collection-movie-list/main-container.css';
 
 const list = (movieList: any) => {
   return (

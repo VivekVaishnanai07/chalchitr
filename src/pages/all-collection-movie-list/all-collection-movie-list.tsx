@@ -1,7 +1,6 @@
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import { Button, Card, CardActions, CardContent, Grid } from '@mui/material';
 import { movies } from '../common/utils';
-import './main-container.css';
 
 const AllCollectionMovieList = () => {
 
@@ -15,13 +14,10 @@ const AllCollectionMovieList = () => {
               transition: 'transform ease-in-out .25s', borderRadius: 0,
             }}>
               <img src={data.img} style={{ width: '100%', height: '300px' }} alt={data.name} />
-              <CardContent className='card-container'>
-                <div className='card-bottom-title'>{data.name}</div>
-                <div className="overlay"></div>
+              <CardContent >
+                <div>{data.name}</div>
+                <FileDownloadOutlinedIcon className='button-icon' />
               </CardContent>
-              <CardActions className='details'>
-                <Button size="small" href={data.download} className="button"><FileDownloadOutlinedIcon className='button-icon' /></Button>
-              </CardActions>
             </Card>
           </Grid>
         ))}
