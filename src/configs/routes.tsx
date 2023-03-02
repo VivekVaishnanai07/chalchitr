@@ -8,21 +8,17 @@ const PrivateDashboardLayout = React.lazy(
   () => import('../layout/main-layout/private-router')
 );
 
-const LandingPage = React.lazy(
-  () => import('../pages/landing-page/landing-page')
-);
-
 const AllCategoryMovies = React.lazy(() => import('../pages/all-category-movies/all-category-movies'));
 
 export const PUBLIC_ROUTES = [
   {
     path: '/',
-    element: <LandingPage />,
-  },
-  {
-    path: '*',
     element: <PrivateDashboardLayout />,
     children: [
+      {
+        path: '/',
+        element: <AllCollectionMovieList />,
+      },
       {
         path: 'collections',
         element: <AllCollectionMovieList />,
