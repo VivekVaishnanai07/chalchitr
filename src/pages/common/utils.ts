@@ -37,31 +37,31 @@ export const movies: Movies[] = [
   {
     img: 'https://m.media-amazon.com/images/M/MV5BYTYwYmI0NGItYmFkYi00NzViLWIwMGEtNGNjYjQwYjY1NTQ1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg',
     name: 'Mission Majnu',
-    download: 'https://arkmedia.tk/0:/Movies/Mission%20Majnu%202023%201080p.NF.WEB-DL.MULTI.DDP5.1.H.265-Telly.mkv',
+    download: 'http://surl.li/fdwzz',
     category: 'Bollywood'
   },
   {
     img: 'https://stat4.bollywoodhungama.in/wp-content/uploads/2022/10/Ram-Setu-2.jpeg',
     name: 'Ram Setu',
-    download: 'https://t.ly/GyDn',
+    download: 'http://surl.li/fdxaz',
     category: 'Bollywood'
   },
   {
     img: 'https://static-koimoi.akamaized.net/wp-content/new-galleries/2022/10/raksha-bandhan-zee5-global-announces-the-world-digital-premiere-of-akshay-kumar-starrer-on-october-5-002.jpg',
     name: 'Raksha Bandhan',
-    download: 'https://t.ly/cnjWx',
+    download: 'http://surl.li/fdxbe',
     category: 'Bollywood'
   },
   {
     img: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRBJByC1HOmy5OR4ZpUEPadlh8feYGBFiFKNnKL-JEdqX8yDq5',
     name: 'Salaam Venky',
-    download: 'https://t.ly/4WAP',
+    download: 'http://surl.li/fdxbg',
     category: 'Bollywood'
   },
   {
     img: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQa0Zi2WnzZuxqkxu4nVyblAV2BKWvBbPHFkcfhXeZ5-gbKdCfB',
     name: 'An Action Hero',
-    download: 'https://t.ly/sRhk',
+    download: 'http://surl.li/fdxbp',
     category: 'Bollywood'
   },
   {

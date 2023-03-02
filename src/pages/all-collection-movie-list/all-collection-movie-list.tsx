@@ -27,7 +27,7 @@ const AllCollectionMovieList = () => {
                   <Button variant="outlined" style={{ color: '#1976d2', borderColor: '#1976d2' }} startIcon={<PlayArrowIcon style={{ color: '#1976d2' }} />} size='small'>Play</Button>
                 </Grid>
                 <Grid item xs={6} md={6}>
-                  <Button variant="outlined" color="success" size='small' href={data.download}><DownloadIcon />Download</Button>
+                  <Button variant="outlined" color="success" size='small' href={decodeURIComponent(data.download)}><DownloadIcon />Download</Button>
                 </Grid>
               </CardActions>
             </Card>
