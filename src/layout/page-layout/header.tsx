@@ -2,13 +2,12 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import MenuIcon from '@mui/icons-material/Menu';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
 import CssBaseline from '@mui/material/CssBaseline';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
@@ -18,9 +17,8 @@ import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { ReactComponent as MovieIcon } from '../../assets/svg/film.svg';
 import { ReactComponent as FilmIcon } from '../../assets/svg/film1.svg';
 import { getRandomColor } from '../../pages/common/utils';
+import './header.css';
 import Style from './sidebar.module.scss';
-import './header.css'
-import { TextField } from '@mui/material';
 
 const drawerWidth = 240;
 
@@ -91,7 +89,6 @@ export default function TopBar(props: Props) {
 
   const SideBarHeader = (
     <div className={Style['sidebar-header']}>
-      <img src='chalchitra_main.png' />
     </div>
   );
 

@@ -1,4 +1,3 @@
-import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import { Button, Card, CardActions, CardContent, Grid } from '@mui/material';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -19,8 +18,9 @@ const list = (movieList: any) => {
                 <div className='card-bottom-title'>{data.name}</div>
                 <div className="overlay"></div>
               </CardContent>
-              <CardActions className='details'>
-                <Button size="small" href={data.download} className="button"><FileDownloadOutlinedIcon className='button-icon' /></Button>
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
               </CardActions>
             </Card>
           </Grid>
