@@ -18,6 +18,7 @@
   background-color: rgb(70 70 70 / 45%);
   border-radius: 5px;
 }
+
 .d-flex {
   display: flex;
 }
@@ -118,4 +119,8 @@
   &.three {
     -webkit-line-clamp: 3;
   }
+}
+
+.css-cstir9-MuiButton-startIcon {
+  margin: 0px !important;
 }

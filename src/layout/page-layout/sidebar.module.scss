@@ -25,9 +25,9 @@
   }
 
   & .nav-item {
-    color: $primary;
-    border-radius: 2.5rem;
-    margin: 0.25rem 0;
+    background: black;
+    color: white;
+    border-radius: 50px 50px;
 
     &-active,
     &-active:hover {

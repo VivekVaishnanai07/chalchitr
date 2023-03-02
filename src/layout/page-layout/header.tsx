@@ -149,7 +149,7 @@ export default function TopBar(props: Props) {
             <MenuIcon />
           </IconButton>
           {
-            pathLocation === "collections" ?
+            pathLocation === "collections" || pathLocation === "" ?
               (
                 <div className='icon-wrapper'>
                   <MovieIcon style={{ height: 30, width: 30, margin: 8 }} />
@@ -160,6 +160,14 @@ export default function TopBar(props: Props) {
                   <ArrowBackIosIcon style={{ height: 25, width: 25, margin: 8 }} onClick={onClickBack} />
                 </div>
               )
+          }
+          {
+            pathLocation === "" &&
+            <Breadcrumbs aria-label='breadcrumb'>
+              <Typography variant="h5" sx={{ textTransform: 'capitalize', fontSize: '20px' }} color='text.primary'>
+                collections
+              </Typography>
+            </Breadcrumbs>
           }
           <Breadcrumbs aria-label='breadcrumb'>
             {

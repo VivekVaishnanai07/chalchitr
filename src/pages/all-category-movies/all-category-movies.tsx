@@ -1,7 +1,10 @@
 import { Button, Card, CardActions, CardContent, Grid } from '@mui/material';
 import { useEffect } from 'react';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import DownloadIcon from '@mui/icons-material/Download';
 import { useLocation } from 'react-router-dom';
 import { movies } from '../common/utils';
+import '../../assets/css/shared.scss'
 
 const list = (movieList: any) => {
   return (
@@ -18,9 +21,13 @@ const list = (movieList: any) => {
                 <div className='card-bottom-title'>{data.name}</div>
                 <div className="overlay"></div>
               </CardContent>
-              <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+              <CardActions style={{ textAlign: 'center' }}>
+                <Grid item xs={6} md={6} style={{ fontSize: 14, fontWeight: 500, marginLeft: '-16px' }}>
+                  <Button variant="outlined" style={{ color: '#1976d2', borderColor: '#1976d2' }} startIcon={<PlayArrowIcon style={{ color: '#1976d2' }} />} size='small'>Play</Button>
+                </Grid>
+                <Grid item xs={6} md={6}>
+                  <Button variant="outlined" color="success" size='small'><DownloadIcon />Download</Button>
+                </Grid>
               </CardActions>
             </Card>
           </Grid>

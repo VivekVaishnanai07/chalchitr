@@ -37,7 +37,7 @@ export const movies: Movies[] = [
   {
     img: 'https://m.media-amazon.com/images/M/MV5BYTYwYmI0NGItYmFkYi00NzViLWIwMGEtNGNjYjQwYjY1NTQ1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg',
     name: 'Mission Majnu',
-    download: 'https://t.ly/MOSS',
+    download: 'https://arkmedia.tk/0:/Movies/Mission%20Majnu%202023%201080p.NF.WEB-DL.MULTI.DDP5.1.H.265-Telly.mkv',
     category: 'Bollywood'
   },
   {
