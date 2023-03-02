@@ -67,7 +67,7 @@ export const movies: Movies[] = [
   {
     img: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzNzI5w3iKM-KdasCDvlOEUgD2ojlf7IW5b-e3tqFmhW2JRSCz',
     name: 'Black Panther Wakanda Forever',
-    download: 'https://t.ly/XXa4',
+    download: 'http://surl.li/fdxcq',
     category: 'Hollywood'
   },
   {
