@@ -22,11 +22,13 @@ const list = (movieList: any) => {
                 <div className="overlay"></div>
               </CardContent>
               <CardActions style={{ textAlign: 'center' }}>
-                <Grid item xs={6} md={6} style={{ fontSize: 14, fontWeight: 500, marginLeft: '-16px' }}>
-                  <Button variant="outlined" style={{ color: '#1976d2', borderColor: '#1976d2' }} startIcon={<PlayArrowIcon style={{ color: '#1976d2' }} />} size='small'>Play</Button>
-                </Grid>
-                <Grid item xs={6} md={6}>
-                  <Button variant="outlined" color="success" size='small'><DownloadIcon />Download</Button>
+                <Grid container>
+                  <Grid item xs={6} md={6} style={{ fontSize: 14, fontWeight: 500, marginLeft: '-16px' }}>
+                    <Button variant="outlined" style={{ color: '#1976d2', borderColor: '#1976d2' }} startIcon={<PlayArrowIcon style={{ color: '#1976d2' }} />} size='small'>Play</Button>
+                  </Grid>
+                  <Grid item xs={6} md={6}>
+                    <Button variant="outlined" color="success" size='small'><DownloadIcon />Download</Button>
+                  </Grid>
                 </Grid>
               </CardActions>
             </Card>

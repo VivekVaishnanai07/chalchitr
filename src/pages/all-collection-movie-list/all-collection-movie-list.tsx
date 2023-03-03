@@ -23,11 +23,13 @@ const AllCollectionMovieList = () => {
                 <div style={{ fontSize: 18, fontWeight: 500, textAlign: 'center' }}>{truncate(data.name, 20)}</div>
               </CardContent>
               <CardActions style={{ textAlign: 'center' }}>
-                <Grid item xs={6} md={6} style={{ fontSize: 14, fontWeight: 500, marginLeft: '-16px' }}>
-                  <Button variant="outlined" style={{ color: '#1976d2', borderColor: '#1976d2' }} startIcon={<PlayArrowIcon style={{ color: '#1976d2' }} />} size='small'>Play</Button>
-                </Grid>
-                <Grid item xs={6} md={6}>
-                  <Button variant="outlined" color="success" size='small' href={decodeURIComponent(data.download)}><DownloadIcon />Download</Button>
+                <Grid container>
+                  <Grid item xs={6} md={6} style={{ fontSize: 14, fontWeight: 500 }}>
+                    <Button variant="outlined" style={{ color: '#1976d2', borderColor: '#1976d2' }} startIcon={<PlayArrowIcon style={{ color: '#1976d2' }} />}>Play</Button>
+                  </Grid>
+                  <Grid item xs={6} md={6}>
+                    <Button variant="outlined" color="success" href={decodeURIComponent(data.download)}><DownloadIcon />Download</Button>
+                  </Grid>
                 </Grid>
               </CardActions>
             </Card>
