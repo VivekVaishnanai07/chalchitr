@@ -1,8 +1,8 @@
-import { Button, Card, CardActions, CardContent, Grid } from '@mui/material';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import DownloadIcon from '@mui/icons-material/Download';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import { Card, CardContent, Grid, IconButton } from '@mui/material';
+import '../../assets/css/shared.scss';
 import { movies } from '../common/utils';
-import '../../assets/css/shared.scss'
 
 const AllCollectionMovieList = () => {
   const truncate = (source: any, size: number) => {
@@ -19,19 +19,19 @@ const AllCollectionMovieList = () => {
               transition: 'transform ease-in-out .25s', borderRadius: 0,
             }}>
               <img src={data.img} style={{ width: '100%', height: '300px' }} alt={data.name} />
-              <CardContent style={{ padding: 8 }}>
-                <div style={{ fontSize: 18, fontWeight: 500, textAlign: 'center' }}>{truncate(data.name, 20)}</div>
-              </CardContent>
-              <CardActions style={{ textAlign: 'center' }}>
-                <Grid container>
-                  <Grid item xs={6} md={6} style={{ fontSize: 14, fontWeight: 500 }}>
-                    <Button variant="outlined" style={{ color: '#1976d2', borderColor: '#1976d2' }} startIcon={<PlayArrowIcon style={{ color: '#1976d2' }} />}>Play</Button>
-                  </Grid>
-                  <Grid item xs={6} md={6}>
-                    <Button variant="outlined" color="success" href={decodeURIComponent(data.download)}><DownloadIcon />Download</Button>
-                  </Grid>
+              <Grid container style={{ height: '100px' }}>
+                <CardContent style={{ padding: 8, width: '100%' }}>
+                  <div style={{ fontSize: 18, fontWeight: 500, textAlign: 'center' }}>{truncate(data.name, 16)}</div>
+                </CardContent>
+                <Grid item xs={12} style={{ justifyContent: 'center', alignItems: 'center', display: 'flex', paddingBottom: '8px' }}>
+                  <IconButton aria-label="play movie" style={{ border: '1px solid #1976d2', right: '4px' }}>
+                    <PlayArrowIcon style={{ color: '#1976d2' }} />
+                  </IconButton>
+                  <IconButton aria-label="download" href={data.download} style={{ border: '1px solid #2e7d32' }}>
+                    <DownloadIcon color="success" />
+                  </IconButton>
                 </Grid>
-              </CardActions>
+              </Grid>
             </Card>
           </Grid>
         ))}
